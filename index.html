@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deekshant Sharma - Portfolio</title>
+    <meta name="description" content="Deekshant Sharma - Data Scientist & DevOps Engineer Portfolio">
+    <meta name="keywords" content="Data Science, DevOps, Machine Learning, Python, AWS, Docker">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Dk</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="/public/resume.pdf" download class="nav-link resume-btn">Resume</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">
+                        <span class="blinking-text">Deekshant Sharma</span>
+                    </h1>
+                    <p class="home-tagline">Burning With Passion to Be a Part of Your Journey</p>
+                    <div class="home-buttons">
+                        <button class="btn-glow" onclick="scrollToSection('projects')">
+                            <i class="fas fa-search"></i> View Projects
+                        </button>
+                        <button class="btn-glow secondary" onclick="downloadResume()">
+                            <i class="fas fa-download"></i> Download Resume
+                        </button>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="profile-container">
+                        <img src="public/mypic.jpg" 
+                             alt="Deekshant Sharma" class="profile-image">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-text">
+                        <p>I am a passionate Data Scientist and DevOps Engineer with expertise in machine learning, cloud technologies, and automation. Currently pursuing my degree while gaining hands-on experience through internships and personal projects.</p>
+                        <p>My journey in technology spans across data science, DevOps practices, and software development. I enjoy solving complex problems and building scalable solutions that make a real impact.</p>
+                        <p>With certifications in Java, Red Hat RHCSA, and Data Science, I bring a strong foundation in both theoretical knowledge and practical implementation.</p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">RHCSA/Linux</div>
+                        <div class="skill-tag">Docker</div>
+                        <div class="skill-tag">Git</div>
+                        <div class="skill-tag">Jenkins</div>
+                        <div class="skill-tag">HTML/CSS/JS</div>
+                        <div class="skill-tag">Flask</div>
+                        <div class="skill-tag">Django</div>
+                        <div class="skill-tag">Machine Learning</div>
+                        <div class="skill-tag">AWS</div>
+                        <div class="skill-tag">DevOps</div>
+                    </div>
+                    <button class="btn-glow" onclick="window.open('/public/resume.pdf', '_blank')">
+                        View Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h3>Data Scientist Intern</h3>
+                        <h4>AU Small Finance Bank</h4>
+                        <span class="duration">3 months</span>
+                    </div>
+                    <div class="experience-details">
+                        <ul>
+                            <li>Built 200+ CIBIL-based variables for credit risk assessment</li>
+                            <li>Automated ETL workflows using AWS EMR for large-scale data processing</li>
+                            <li>Implemented machine learning models for financial data analysis</li>
+                            <li>Collaborated with cross-functional teams to deliver data-driven insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="geometric-bg"></div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="public/java.jpg" alt="Java Core Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Java Core</h3>
+                        <p>Comprehensive Java programming certification covering OOP concepts and core Java fundamentals.</p>
+                        <button class="btn-glow small" onclick="openCertModal('java')">View Certificate</button>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="public/rhcsa.jpg" alt="RHCSA Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Red Hat RHCSA (2025)</h3>
+                        <p>Red Hat Certified System Administrator certification demonstrating Linux system administration skills.</p>
+                        <button class="btn-glow small" onclick="openCertModal('rhcsa')">View Certificate</button>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="public/ds.jpg" alt="Data Science Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3>Data Science - PW Skills (2024)</h3>
+                        <p>Complete data science certification covering machine learning, statistics, and data analysis.</p>
+                        <button class="btn-glow small" onclick="openCertModal('datascience')">View Certificate</button>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="public/sas.jpg" alt="SAS Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3>SAS Visual Business Analytics (2025)</h3>
+                        <p>SAS certification for business analytics and data visualization using SAS Visual Analytics.</p>
+                        <button class="btn-glow small" onclick="openCertModal('sas')">View Certificate</button>
+                    </div>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=300" alt="DevOps Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3>DevOps & Cloud - LinuxWorld (Ongoing)</h3>
+                        <p>Comprehensive DevOps and cloud computing certification program currently in progress.</p>
+                        <button class="btn-glow small ongoing" disabled>Ongoing</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-category">
+                <h3 class="category-title">🔷 Major Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card major">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400" alt="DevOps CI/CD Project">
+                        </div>
+                        <div class="project-content">
+                            <h4>DevOps CI/CD Application</h4>
+                            <p> This project demonstrates a complete DevOps pipeline using a Flask backend application. I developed the app without a frontend, wrote unit tests using Pytest, and pushed the code to GitHub. A Dockerfile was created to containerize the app, ensuring consistent deployment. I then set up Jenkins to automate the CI/CD process. Jenkins was configured to pull the latest code from GitHub, run Pytest, and build the Docker image. A GitHub webhook was added to trigger Jenkins automatically on code changes, enabling continuous integration and delivery with minimal manual effort.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">pytest</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Jenkins</span>
+                            </div>
+                            <a href="https://github.com/Dksharma1102/Devops_project_01_End_to_End.git" target="_blank" class="btn-glow">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3 class="category-title">🟣 Minor Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="public/pythontask.jpg" alt="AI Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h4>AI Feature Dashboard</h4>
+                            <p>Comprehensive AI dashboard Performing some task -  WhatsApp -Email -SMS -calling  without showing our number  features, face swap, tweet posting, and web scraping , Google searching , capabilities.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">opencv</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">APIs</span>
+                            </div>
+                            <button class="btn-glow" onclick="alert('GitHub link coming soon!')">
+                                <i class="fab fa-github"></i> View Project
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Plant Recommendation">
+                        </div>
+                        <div class="project-content">
+                            <h4>Plant Recommendation System</h4>
+                            <p>Machine learning-based system for recommending plants based on environmental conditions and user preferences.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <a href="https://github.com/Dksharma1102/plant-recommended-system.git" target="_blank" class="btn-glow">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=400" alt="AI Attendance System">
+                        </div>
+                        <div class="project-content">
+                            <h4>AI Attendance System</h4>
+                            <p>Intelligent attendance system using computer vision for face and hand recognition with automated tracking.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">ML</span>
+                            </div>
+                            <a href="https://github.com/Dksharma1102/attendance_system_using-one-hand-and-face.git" target="_blank" class="btn-glow">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>deekshantsharma36@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7014311035</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/deekshantsharma" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Dksharma1102" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/917014311035" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-glow">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertModal()">&times;</span>
+            <div class="modal-body">
+                <h3 id="modalTitle">Certificate Title</h3>
+                <img id="modalImage" src="" alt="Certificate">
+                <p id="modalDescription">Certificate description...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

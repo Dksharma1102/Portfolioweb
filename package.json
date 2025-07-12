@@ -1,0 +1,24 @@
+{
+  "name": "deekshant-sharma-portfolio",
+  "version": "1.0.0",
+  "description": "Deekshant Sharma's personal portfolio website - Data Scientist & DevOps Engineer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "start": "live-server --port=3000 --open=/"
+  },
+  "keywords": [
+    "portfolio",
+    "data science",
+    "devops",
+    "machine learning",
+    "python",
+    "aws",
+    "docker"
+  ],
+  "author": "Deekshant Sharma <deekshantsharma36@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
